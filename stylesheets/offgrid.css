@@ -98,7 +98,7 @@ body {
   top: 0px;
   left: 110px;
   width: 550px;
-  height: 90%;
+  height: 100%;
   background-color: rgba(196, 195, 184, 0.7);
   color: #000;
   padding: 20px;
@@ -453,15 +453,16 @@ div#credits span.author {
 #days ul li {
   color: red;
   margin-top: 50px;
+  display: inline-block;
 }
 
-/* line 359, ../sass/offgrid.scss */
+/* line 360, ../sass/offgrid.scss */
 #days ul li a {
   color: white;
   text-decoration: none;
 }
 
-/* line 365, ../sass/offgrid.scss */
+/* line 366, ../sass/offgrid.scss */
 #progress {
   position: absolute;
   top: 0;
@@ -469,12 +470,12 @@ div#credits span.author {
   z-index: 100;
 }
 
-/* line 371, ../sass/offgrid.scss */
+/* line 372, ../sass/offgrid.scss */
 #progress li {
   display: inline-block;
 }
 
-/* line 375, ../sass/offgrid.scss */
+/* line 376, ../sass/offgrid.scss */
 #progress li a {
   display: block;
   width: 9px;
@@ -484,25 +485,25 @@ div#credits span.author {
   /*background: url(http://vizzuality.github.io/rollingstonesmap/img/timeBullet.png) 0 0 no-repeat;*/
 }
 
-/* line 390, ../sass/offgrid.scss */
+/* line 391, ../sass/offgrid.scss */
 #progress li.active a {
   color: red;
   /*background: url(http://vizzuality.github.io/rollingstonesmap/img/timeBullet.png) 0 -9px no-repeat;*/
 }
 
-/* line 394, ../sass/offgrid.scss */
+/* line 395, ../sass/offgrid.scss */
 .arrowBig {
   font-size: 30px;
   font-weight: bold;
   margin: 10px;
 }
 
-/* line 399, ../sass/offgrid.scss */
+/* line 400, ../sass/offgrid.scss */
 .arrowBig:hover {
   color: red;
 }
 
-/* line 404, ../sass/offgrid.scss */
+/* line 405, ../sass/offgrid.scss */
 .iframe {
   position: absolute;
   z-index: 1;
@@ -513,7 +514,7 @@ div#credits span.author {
   opacity: 0.5;
 }
 
-/* line 417, ../sass/offgrid.scss */
+/* line 418, ../sass/offgrid.scss */
 #dvLoading {
   background: #000  no-repeat center center;
   opacity: 0.8;
@@ -526,7 +527,7 @@ div#credits span.author {
   margin: -25px 0 0 -25px;
 }
 
-/* line 430, ../sass/offgrid.scss */
+/* line 431, ../sass/offgrid.scss */
 #dvLoading i {
   position: fixed;
   z-index: 1000;
@@ -535,7 +536,7 @@ div#credits span.author {
   margin: -25px 0 0 -25px;
 }
 
-/* line 438, ../sass/offgrid.scss */
+/* line 439, ../sass/offgrid.scss */
 #map.cartodb-legend-stack {
   display: none;
   background-color: red;
