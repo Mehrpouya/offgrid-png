@@ -2,8 +2,8 @@
 @import "compass/css3/font-face";
 @import "compass/css3/transition";
 
-@font-face{ font-family: 'lato'; src: url('/fonts/Lato-Regular.eot'); src: url('/fonts/Lato-Regular.eot?iefix') format('eot'), url('/fonts/Lato-Regular.woff') format('woff'), url('/fonts/Lato-Regular.ttf') format('truetype'), url('/fonts/Lato-Regular.svg#webfont') format('svg'); }
-@font-face{ font-family: 'lato-bold'; src: url('/fonts/Lato-Bold.eot'); src: url('/fonts/Lato-Bold.eot?iefix') format('eot'), url('/fonts/Lato-Bold.woff') format('woff'), url('/fonts/Lato-Bold.ttf') format('truetype'), url('/fonts/Lato-Bold.svg#webfont') format('svg'); }
+@font-face{ font-family: 'lato'; src: url('fonts/Lato-Regular.eot'); src: url('fonts/Lato-Regular.eot?iefix') format('eot'), url('fonts/Lato-Regular.woff') format('woff'), url('fonts/Lato-Regular.ttf') format('truetype'), url('fonts/Lato-Regular.svg#webfont') format('svg'); }
+@font-face{ font-family: 'lato-bold'; src: url('fonts/Lato-Bold.eot'); src: url('fonts/Lato-Bold.eot?iefix') format('eot'), url('fonts/Lato-Bold.woff') format('woff'), url('fonts/Lato-Bold.ttf') format('truetype'), url('fonts/Lato-Bold.svg#webfont') format('svg'); }
 
 body {
     font-family: 'lato', Arial, sans-serif;
