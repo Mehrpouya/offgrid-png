@@ -1,0 +1,134 @@
+<!doctype><html><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Odyssey.js Slides</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/x-icon" href="http://cartodb.github.io/odyssey.js/sandbox/favicon.png">
+  <link rel="icon" type="image/png" href="http://cartodb.github.io/odyssey.js/sandbox/favicon.png">
+
+  <link rel="stylesheet" href="http://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/themes/css/cartodb.css">
+  <link rel="stylesheet" href="stylesheets/offgrid.css">
+  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+  <script src="http://cartodb.github.io/odyssey.js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+    <div id="days">
+            <ul id="daysList">
+                <li><a href="index.html">Introduction</a></li>
+                <li class="selected"><a href="clearing.html">Clearing</a></li>
+                <li ><a href="grass.html">Grass</a></li>
+                <li ><a href="#">Kinship</a></li>
+                <li ><a href="#">Buildings</a></li>
+                <li ><a href="#">Medicines</a></li>
+                <li ><a href="#">Road</a></li>
+                <li><a href="#">Begasin Health Centre</a></li>
+
+            </ul>
+        </div>
+  <div id="map" style="width: 100%; height: 100%;"></div>
+
+  <div id="slides_container" style="display:block;">
+    <div id="dots"></div>
+
+    <div id="slides"></div>
+
+    <ul id="navButtons">
+      <li><a class="prev"></a></li>
+      <li><a class="next"></a></li>
+    </ul>
+  </div>
+
+  <div id="credits">
+    <span class="title" id="title">Papua New Guinea</span>
+    <span class="author"><strong id="author">Off the Grid</strong> <a href="http://cartodb.github.io/odyssey.js/">Odyssey.js</a><span>
+  </span></span></div>
+
+  <script src="http://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/cartodb.js"></script>
+  <script src="http://cartodb.github.io/odyssey.js/dist/odyssey.js" charset="UTF-8"></script>
+  <script src="js/main.js"></script>
+
+  
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-20934186-21', 'cartodb.github.io');
+    ga('send', 'pageview');
+  </script>
+
+  <script type="text/javascript" src="http://fast.fonts.net/jsapi/3af16084-ba56-49ca-b37d-0b49b59e1927.js"></script>
+
+<!---baseurl: "http://a.tiles.mapbox.com/v3/jamiejcross.mi0i2gik/{z}/{x}/{y}.png"-->
+<!---vizjson: "https://edinb.cartodb.com/u/offthegrid/api/v2/viz/f4d83cca-b620-11e4-b906-0e9d821ea90d/viz.json"-->
+```
+<script type="text/template" id="md_template">```
+-baseurl: "http://a.tiles.mapbox.com/v3/jamiejcross.mi7nj31l/{z}/{x}/{y}.png"
+-vizjson: "https://edinb.cartodb.com/u/offthegrid/api/v2/viz/f4d83cca-b620-11e4-b906-0e9d821ea90d/viz.json"
+```
+
+#Clearing
+```
+L.marker([37.7620, -122.4385]).actions.addRemove(S.map)
+- center: [-5.3378, -214.8383]
+- zoom: 11
+```
+In the 1930s German Lutheran missionaries bought land from the Ortamor clan of Orsok and established a mission station in a clearing in the forest.
+
+![Map2] (https://dl.dropboxusercontent.com/u/80615/2%20Clearing/Clearing%20Image%201.jpg)
+ 
+#Clearing
+```
+- center: [-5.3846, -214.5563]
+- zoom: 18
+```
+Over the next 25 years a school was opened, a missionary house built, a church constructed and eventually a small bush material aid post built by local villagers. 
+
+![Church](https://dl.dropboxusercontent.com/u/80615/7%20Health%20Centre/Health%20Centre%20image%202.JPG)
+
+![Mission House](https://dl.dropboxusercontent.com/u/80615/7%20Health%20Centre/Health%20Centre%20image%203.JPG)
+
+
+#Clearing
+```
+L.marker([40.7348, -73.9970]).actions.addRemove(S.map)
+- center: [-5.3830, -214.5592]
+- zoom: 18
+```
+![view] (https://dl.dropboxusercontent.com/u/80615/2%20Clearing/Clearing%20Image%202.JPG)
+
+In 1975, following independence, it seemed like these development efforts were gaining momentum. With the building of the new road in 1978 building materials could be brought into the area by truck and the bush material aid post was replaced with a permanent structure. Materials that could not be transported by truck were carried by volunteers from the surrounding villages. 
+
+![pig] (https://dl.dropboxusercontent.com/u/80615/2%20Clearing/Clearing.JPG)
+
+The building was finished in 1981. People travelled from around the region to celebrate the opening of the new facility. Those from clans nearby donated pigs for a feast and every village performed their traditional dances and songs.
+
+#Clearing
+```
+- center: [-5.3869, -214.5635]
+- zoom: 15
+```
+![Aiote](https://dl.dropboxusercontent.com/u/80615/2%20Clearing/Clearing%20Image%203.JPG)
+
+Today some of the region’s oldest residents can remember watching the growth of the station. Aiote was a mother of 8 from the hamlet of Wokaisor, about 40 minutes walk from the mission station along the river bed. She was the first wife of the big man of this small hamlet. 
+
+In 2012 she could remember how happy people were that a new health centre was being built from modern, permanent materials. They could see the place was changing and thought their lives would get better. 
+
+For the surrounding villagers, the improvement of the mission station’s material infrastructure, including the health centre, the airstrip and the road, were all understood to reflect their success in making productive relationships with foreign missionaries and politicians.
+
+#Clearing
+```
+- center: [-5.3831, -214.5606]
+- zoom: 17
+```
+
+
+![Health Centre](https://dl.dropboxusercontent.com/u/80615/7%20Health%20Centre/Health%20Centre%20image%206.jpg)
+
+Before the health centre could open, volunteers from surrounding villages built houses, kitchens and toilets for the health workers and cut the grass around the health centre. Aiote describes how people were happy to work for the mission or government because they were happy to have the infrastructure and the health workers living there. The local community knew that they needed to keep these strangers in their vicinity and feared that they would leave.
+        </script>
+</body></html>

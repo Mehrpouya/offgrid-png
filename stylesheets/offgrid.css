@@ -146,7 +146,7 @@ body {
 #slides_container h1:after, #slides_container h2:after, #slides_container h3:after, #slides_container h4:after, #slides_container h5:after, #slides_container h6:after {
   display: block;
   margin: 20px 0 20px 0;
-  height: 3px;
+  height: 1.5px;
   content: " ";
   text-shadow: none;
   background-color: #333;
@@ -196,7 +196,7 @@ body {
 /* line 118, ../sass/offgrid.scss */
 #dots li a {
   opacity: 0.2;
-  color: #333;
+  color: #F97821;
 }
 /* line 122, ../sass/offgrid.scss */
 #dots li a:before {
@@ -292,6 +292,7 @@ ul#navButtons li a.next:hover {
 
 /* line 200, ../sass/offgrid.scss */
 div#credits {
+  display: none;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -300,24 +301,24 @@ div#credits {
   background-color: #FFF;
   z-index: 1000001;
 }
-/* line 208, ../sass/offgrid.scss */
+/* line 209, ../sass/offgrid.scss */
 div#credits a {
   color: #ff7373;
 }
-/* line 211, ../sass/offgrid.scss */
+/* line 212, ../sass/offgrid.scss */
 div#credits span {
   padding: 18px 0 0 0;
   position: absolute;
   font-size: 12px;
   text-transform: uppercase;
 }
-/* line 217, ../sass/offgrid.scss */
+/* line 218, ../sass/offgrid.scss */
 div#credits span.title {
   left: 40px;
   font-family: 'lato-bold', Arial, sans-serif;
   color: #333;
 }
-/* line 223, ../sass/offgrid.scss */
+/* line 224, ../sass/offgrid.scss */
 div#credits span.author {
   right: 40px;
   font-family: 'lato-bold', Arial, sans-serif;
@@ -327,7 +328,7 @@ div#credits span.author {
   text-align: right;
 }
 
-/* line 235, ../sass/offgrid.scss */
+/* line 236, ../sass/offgrid.scss */
 .slide-tip {
   position: absolute;
   top: -18px;
@@ -338,16 +339,16 @@ div#credits span.author {
   border-bottom-color: #ddd;
   text-align: center;
 }
-/* line 246, ../sass/offgrid.scss */
+/* line 247, ../sass/offgrid.scss */
 .slide-tip:hover .tooltip {
   display: inline-block !important;
 }
-/* line 250, ../sass/offgrid.scss */
+/* line 251, ../sass/offgrid.scss */
 .slide-tip:hover:after {
   background: #ccc;
   width: 3px;
 }
-/* line 256, ../sass/offgrid.scss */
+/* line 257, ../sass/offgrid.scss */
 .slide-tip:after {
   content: "";
   display: inline-block;
@@ -359,7 +360,7 @@ div#credits span.author {
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 265, ../sass/offgrid.scss */
+/* line 266, ../sass/offgrid.scss */
 .slide-tip .tooltip {
   position: absolute;
   display: none;
@@ -376,7 +377,7 @@ div#credits span.author {
   font-size: 12px;
   white-space: nowrap;
 }
-/* line 282, ../sass/offgrid.scss */
+/* line 283, ../sass/offgrid.scss */
 .slide-tip .tooltip h1, .slide-tip .tooltip p {
   height: auto;
   padding: 0;
@@ -387,17 +388,17 @@ div#credits span.author {
   line-height: 1.1;
   width: auto;
 }
-/* line 293, ../sass/offgrid.scss */
+/* line 294, ../sass/offgrid.scss */
 .slide-tip .tooltip h1 {
   font-weight: bold;
   margin-bottom: 8px;
   font-size: 11px;
 }
-/* line 299, ../sass/offgrid.scss */
+/* line 300, ../sass/offgrid.scss */
 .slide-tip .tooltip p {
   white-space: nowrap;
 }
-/* line 303, ../sass/offgrid.scss */
+/* line 304, ../sass/offgrid.scss */
 .slide-tip .tooltip:after {
   content: "";
   display: block;
@@ -409,22 +410,23 @@ div#credits span.author {
   border-right: 7px solid transparent;
 }
 
-/* line 319, ../sass/offgrid.scss */
+/* line 320, ../sass/offgrid.scss */
 #days {
-  width: 110px;
+  width: 100px;
   position: fixed;
-  font-size: 15px;
-  font-family: 'lato-bold', Arial, sans-serif;
+  font-size: 14px;
+  font-family: 'lato', Arial, sans-serif;
   left: 0px;
   top: 0px;
   z-index: 110;
   text-align: left;
-  background-color: #3C3C3B;
+  /*background-color: #3C3C3B;*/
+  background-color: #B9CDB4;
   height: 100%;
   padding-left: 10px;
 }
 
-/* line 333, ../sass/offgrid.scss */
+/* line 335, ../sass/offgrid.scss */
 .rot90 {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -432,36 +434,36 @@ div#credits span.author {
   -ms-transform: rotate(90deg);
 }
 
-/* line 339, ../sass/offgrid.scss */
+/* line 341, ../sass/offgrid.scss */
 #days ul {
   text-align: left;
 }
 
-/* line 342, ../sass/offgrid.scss */
+/* line 344, ../sass/offgrid.scss */
 #days ul li.selected {
   color: #F97821;
 }
 
-/* line 347, ../sass/offgrid.scss */
+/* line 349, ../sass/offgrid.scss */
 #days ul li.selected * {
   color: #F97821;
   font-weight: bold;
   text-decoration: underline;
 }
 
-/* line 354, ../sass/offgrid.scss */
+/* line 356, ../sass/offgrid.scss */
 #days ul li {
   color: red;
   margin-top: 50px;
 }
 
-/* line 359, ../sass/offgrid.scss */
+/* line 361, ../sass/offgrid.scss */
 #days ul li a {
   color: white;
   text-decoration: none;
 }
 
-/* line 365, ../sass/offgrid.scss */
+/* line 367, ../sass/offgrid.scss */
 #progress {
   position: absolute;
   top: 0;
@@ -469,12 +471,12 @@ div#credits span.author {
   z-index: 100;
 }
 
-/* line 371, ../sass/offgrid.scss */
+/* line 373, ../sass/offgrid.scss */
 #progress li {
   display: inline-block;
 }
 
-/* line 375, ../sass/offgrid.scss */
+/* line 377, ../sass/offgrid.scss */
 #progress li a {
   display: block;
   width: 9px;
@@ -484,25 +486,25 @@ div#credits span.author {
   /*background: url(http://vizzuality.github.io/rollingstonesmap/img/timeBullet.png) 0 0 no-repeat;*/
 }
 
-/* line 390, ../sass/offgrid.scss */
+/* line 392, ../sass/offgrid.scss */
 #progress li.active a {
   color: red;
   /*background: url(http://vizzuality.github.io/rollingstonesmap/img/timeBullet.png) 0 -9px no-repeat;*/
 }
 
-/* line 394, ../sass/offgrid.scss */
+/* line 396, ../sass/offgrid.scss */
 .arrowBig {
   font-size: 30px;
   font-weight: bold;
   margin: 10px;
 }
 
-/* line 399, ../sass/offgrid.scss */
+/* line 401, ../sass/offgrid.scss */
 .arrowBig:hover {
   color: red;
 }
 
-/* line 404, ../sass/offgrid.scss */
+/* line 406, ../sass/offgrid.scss */
 .iframe {
   position: absolute;
   z-index: 1;
@@ -513,7 +515,7 @@ div#credits span.author {
   opacity: 0.5;
 }
 
-/* line 417, ../sass/offgrid.scss */
+/* line 419, ../sass/offgrid.scss */
 #dvLoading {
   background: #000  no-repeat center center;
   opacity: 0.8;
@@ -526,7 +528,7 @@ div#credits span.author {
   margin: -25px 0 0 -25px;
 }
 
-/* line 430, ../sass/offgrid.scss */
+/* line 432, ../sass/offgrid.scss */
 #dvLoading i {
   position: fixed;
   z-index: 1000;
@@ -535,8 +537,13 @@ div#credits span.author {
   margin: -25px 0 0 -25px;
 }
 
-/* line 438, ../sass/offgrid.scss */
+/* line 440, ../sass/offgrid.scss */
 #map.cartodb-legend-stack {
   display: none;
   background-color: red;
+}
+
+/* line 445, ../sass/offgrid.scss */
+.cartodb-logo * {
+  display: none;
 }

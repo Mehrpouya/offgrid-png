@@ -1,0 +1,169 @@
+<!doctype><html><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Odyssey.js Slides</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/x-icon" href="http://cartodb.github.io/odyssey.js/sandbox/favicon.png">
+  <link rel="icon" type="image/png" href="http://cartodb.github.io/odyssey.js/sandbox/favicon.png">
+
+  <link rel="stylesheet" href="http://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/themes/css/cartodb.css">
+  <link rel="stylesheet" href="stylesheets/offgrid.css">
+  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+  <script src="http://cartodb.github.io/odyssey.js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+    <div id="days">
+            <ul id="daysList">
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">Clearing</a></li>
+                <li ><a href="grass.html">Grass</a></li>
+                <li class="selected"><a href="community.html">Community</a></li>
+                <li ><a href="#">Buildings</a></li>
+                <li ><a href="#">Medicines</a></li>
+                <li ><a href="#">Road</a></li>
+                <li><a href="#">Begasin Health Centre</a></li>
+
+            </ul>
+        </div>
+  <div id="map" style="width: 100%; height: 100%;"></div>
+
+  <div id="slides_container" style="display:block;">
+    <div id="dots"></div>
+
+    <div id="slides"></div>
+
+    <ul id="navButtons">
+      <li><a class="prev"></a></li>
+      <li><a class="next"></a></li>
+    </ul>
+  </div>
+
+  <div id="credits">
+    <span class="title" id="title">Papua New Guinea</span>
+    <span class="author"><strong id="author">Off the Grid</strong> <a href="http://cartodb.github.io/odyssey.js/">Odyssey.js</a><span>
+  </span></span></div>
+
+  <script src="http://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/cartodb.js"></script>
+  <script src="http://cartodb.github.io/odyssey.js/dist/odyssey.js" charset="UTF-8"></script>
+  <script src="js/main.js"></script>
+
+  
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-20934186-21', 'cartodb.github.io');
+    ga('send', 'pageview');
+  </script>
+
+  <script type="text/javascript" src="http://fast.fonts.net/jsapi/3af16084-ba56-49ca-b37d-0b49b59e1927.js"></script>
+
+<!---baseurl: "http://a.tiles.mapbox.com/v3/jamiejcross.mi0i2gik/{z}/{x}/{y}.png"-->
+<!---vizjson: "https://edinb.cartodb.com/u/offthegrid/api/v2/viz/f4d83cca-b620-11e4-b906-0e9d821ea90d/viz.json"-->
+```
+<script type="text/template" id="md_template">```
+-baseurl:"http://a.tiles.mapbox.com/v3/jamiejcross.mi7nj31l/{z}/{x}/{y}.png"
+```
+
+#Community
+
+```
+L.marker([37.7620, -122.4385]).actions.addRemove(S.map)
+- center: [-5.3821, -214.5602]
+- zoom: 18
+```
+
+![Health Centre Diagram](https://dl.dropboxusercontent.com/u/80615/3%20Community/Community%20image%201.jpg)
+
+
+The first health workers arrived at the mission station in 1983. The mission leased extra plots of land for them from local landowners so that they would have small gardens to grow food. But when the first 5 nurses arrived at the health centre, from other parts of Madang Province, these gardens were not established and local villagers brought them food to eat. At the local market, the women would often give extra vegetables to the health workers without charge. 
+
+
+#Community
+```
+L.marker([40.7348, -73.9970]).actions.addRemove(S.map)
+- center: [-5.3858, -214.5652]
+- zoom: 15
+```
+
+![Wokaisor hamlet](https://dl.dropboxusercontent.com/u/80615/3%20Community/Community%20image%203.JPg)
+
+
+Aiote, from Wokaisor, explained that they wanted to make the health workers happy so they would stay in Begasin and give them medicine. They were scared they would go away again:  “We were happy to build their houses and cut the grass because we wanted them to stay. I looked after one of the nurses, taking her garden food. She called me mother”
+
+
+#Community
+```
+- center: [-5.3837, 145.4406]
+- zoom: 17
+``` 
+
+By the 1990s, however, the health workers had begun to establish their gardens, and to grow their own food. Over the years, these gardens increased in size, expanding up to the station limits and the health workers – salaried government employees - began to spend more time working as subsistence farmers, cultivating and growing food. 
+![Garden](https://dl.dropboxusercontent.com/u/80615/3%20Community/Community%20image%205.JPG)
+
+The increased self-sufficiency of heath station workers made them less dependent on gifts or local markets and marked a shift in their relationships with the local community. 
+
+“When they worked for money it was ok. They worked for money and bought food in the market or we gave it to them because we were happy with their work. But if you work for money you cannot work in the garden.” 
+
+Now, Aiote said, they were so busy in their gardens they stopped coming to work. 
+
+![Garden 2](https://dl.dropboxusercontent.com/u/80615/3%20Community/Community%20image%204.jpg)
+
+
+
+#Community
+```
+L.marker([-5.3831, 145.4448]).actions.addRemove(S.map)
+- center: [-5.3829, -214.5591]
+- zoom: 18
+```
+![Health Centre House](https://dl.dropboxusercontent.com/u/80615/3%20Community/Community%20image%206.JPG)
+In the early 1980s Um, the son of Butut, the station manager who had overseen the building of the health centre, married one of the nurses. Um and Gala had three children and lived at the station. People remember Um’s father fondly, indeed one of Aiote’s children was named after him. For many years Um’s mother continued to live in a small house on the mission land, and people felt a continued sense of connection and obligation to the family. They saw them as people who had developed strong enduring relationships with them. 
+
+#Community
+```
+- center: [-5.4896, -214.8500]
+- zoom: 10
+```
+![Health centre diagram2](https://dl.dropboxusercontent.com/u/80615/3%20Community/Community%20image%207.jpg)
+
+In other ways, however, differences were becoming more pronounced. Not only did the health workers spend more time in their gardens when they were in Begasin, they also spent increasingly long lengths of time away from Begasin and could be seen walking to and from town frequently, often returning with newly bought goods for their homes. People were now less happy to give food or help the health workers maintain their homes. They stopped turning up for community day. The staff began to turn up late for work and then refused to give medicine to the patients until they had cut the grass around the health centre. 
+
+In 2009, a young woman who was working as a babysitter for the OIC of the health centre became pregnant, ostensibly following an affair with Um’s son. Fearing retaliation, Um and his family left the mission station and Gala applied for a transfer to another health centre in the province. The family of the young woman also drove out the OIC, who they felt had not looked after the young woman in his employment. This left only one health worker at the station, a young man, Jakob, who was known for his liking for home brew and marijuana. For some time, relationships with this man were difficult. He was angry that the community did not build him a kitchen and complained that no one had helped him to fix the solar lights on his house. They were angry that he was drunk or drugged up and didn’t turn up for work. Patients had to go and get him from his house when they needed care rather than finding him at the health centre. 
+
+#Community
+```
+- center: [-5.3899, -214.5990]
+- zoom: 13
+```
+
+![Solar panels](https://dl.dropboxusercontent.com/u/80615/7%20Health%20Centre/Health%20Centre%20Image%201.jpg)
+
+Today the deterioration of the health centre buildings is a source of frustration for both health workers and the local community. Both point to the dilapidated infrastructure as evidence of their neglect by the Papua New Guinean government. The rusted roof, broken water pipes, rotting walls of the health centre and health worker houses all indicate their abandonment by the government officers who pull the purse strings in the town. 
+
+![Health Centre4](https://dl.dropboxusercontent.com/u/80615/7%20Health%20Centre/Health%20Centre%20image%209.JPG)
+
+But the health workers also point to the failure of people from the local community to turn up for work day on Mondays, their refusal to cut the grass, maintain the housing, or repair the solar lighting system. In one instance a health worker, Jakob, whose bush material kitchen was collapsing refused to come to work until people from the local community came to build him a new one. 
+
+In another instance, Benok, a local leader from a nearby village neglected to tell the newly installed health workers that he knew how to fix their broken solar lighting system because he didn’t think they were turning up to work enough. Physical work on the health centre infrastructure was carried out as part of an exchange relationship. The deterioration of infrastructure was read as an index of that relationship’s deterioration.
+
+#Community
+```
+L.marker([40.7348, -73.9970]).actions.addRemove(S.map)
+- center: [-5.3858, -214.5652]
+- zoom: 15
+```
+![Health centre diagram2](https://dl.dropboxusercontent.com/u/80615/3%20Community/Community%20image%208.JPG)
+
+Again, over time, these fractious relations have improved. In 2013, people told me how happy they were that Jakob had not left the mission station in the years he has been there on his own. In that time they say he received no help from the church or the government. It didn’t have new equipment, they didn’t send more workers to help Jakob out, or a female nurse to help with deliveries. Often, they told me, Jakob did not get any pay, but he still didn’t leave. He also kept his house open and people could always drop in to talk to him. In other words, they came to see him to be as abandoned and marginal to church and state as themselves. Now the women gave him free food on market days again. Jakob moved into Um and Gala’s old house and Benok helped him to get the solar lighting working. Their worst fear, people told me, was that he would leave.
+
+![Health centre diagram2](https://dl.dropboxusercontent.com/u/80615/3%20Community/Community%20image%209.JPG)
+
+Now Benok remembers that his father, Arisaum, had spent some time in Amele, where Jakob is from, as a child, when he looked after Jakob’s father in the Lutheran hospital there. Jakob already knew Arisaum’s name when he arrived in Begasin, Benok told me. This old connection is reinvested with significance in the light of the changing relationship in the present. Indeed people see such old relationships as crucial to Jakob’s motivation to assist them when they are sick. On several occasions Jakob walked out to Wokaisor to visit Arisaum when he fell ill. When Arisaum finally became critically ill in 2014, it was a sign of the family’s trust in Jakob that they moved Arisaum to the health centre, where together Jakob and Arisaum’s children cared for him during his last days.
+        </script>
+</body></html>

@@ -68,7 +68,7 @@ body {
         &:after{
             display: block;
             margin: 20px 0 20px 0;
-            height: 3px;
+            height: 1.5px;
             content: " ";
             text-shadow: none;
             background-color: #333;
@@ -117,7 +117,7 @@ body {
 
         a{
             opacity: 0.2;
-            color: #333;
+            color: #F97821;
 
             &:before {
                 content: ' \25CF';
@@ -198,6 +198,7 @@ ul#navButtons{
 }
 
 div#credits{
+    display: none;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -317,15 +318,16 @@ div#credits{
 //test
 
 #days{
-    width: 110px;
+    width: 100px;
     position: fixed;
-    font-size: 15px;
-    font-family: 'lato-bold', Arial, sans-serif;
+    font-size: 14px;
+    font-family: 'lato', Arial, sans-serif;
     left: 0px;
     top: 0px;
     z-index: 110;
     text-align: left;
-    background-color: #3C3C3B;
+    /*background-color: #3C3C3B;*/
+    background-color: #B9CDB4;
     height: 100%;
     padding-left: 10px;
 }
@@ -440,3 +442,6 @@ div#credits{
     background-color: red;
 }
 
+.cartodb-logo *{
+    display: none;
+}
