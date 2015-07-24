@@ -186,11 +186,11 @@ ul#navButtons{
             display: inline-block;
             width: 23px;
             height: 30px;
-            background: transparent image-url("/images/navBtns.png") no-repeat -10px 0 ;
+            background: transparent image-url("/offgrid-png/images/navBtns.png") no-repeat -10px 0 ;
             &:hover{ background-position: -10px -30px; cursor: pointer;}
 
             &.next{
-                background: transparent image-url("/images/navBtns.png") no-repeat -30px 0;
+                background: transparent image-url("/offgrid-png/images/navBtns.png") no-repeat -30px 0;
                 &:hover{ background-position: -30px -30px;}
             }
         }
