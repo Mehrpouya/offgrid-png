@@ -119,12 +119,14 @@ html { min-height: 100%; }
 
 #content {
   position: absolute;
-  left: 100px;
-  top: 0px;
+  left: 110px;
+  top: 3px;
   z-index: 999;
   padding: 0px 0px 80px;
   max-width: 800px;
   margin: 0 auto;
+  background-color: rgba(196,195,184,0.9);
+
   text-align: left;
   /*min-height: 1800px;*/
   img { max-width: 100%; margin: 20px 0 0 0; }
@@ -133,7 +135,8 @@ html { min-height: 100%; }
   }
   > div {
     margin-top: 0px;
-    background: #fff;
+    background-color: rgba(196,195,184,0.7);
+
     padding: 40px;
     border-radius: 2px;
     box-shadow: 0 1px 0px rgba(0, 0, 0, .1);
@@ -238,8 +241,8 @@ div#credits {
     top: 0px;
     z-index: 110;
     text-align: left;
-    /*background-color: #3C3C3B;*/
-    background-color: #B9CDB4;
+    background-color: #3C3C3B;
+/*    background-color: rgba(196,195,184,1);*/
     height: 100%;
     padding-left: 10px;
 }
