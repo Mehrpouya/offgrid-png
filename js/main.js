@@ -144,8 +144,8 @@ O.Template({
     init: function() {
         var seq = O.Triggers.Sequential();
 
-        var baseurl = this.baseurl = 'http://{s}.api.cartocdn.com/base-light/{z}/{x}/{y}.png';
-        var map = this.map = L.map('map').setView([0, 0.0], 4);
+        var baseurl = this.baseurl = 'http://a.tiles.mapbox.com/v3/jamiejcross.mi0i2gik/{z}/{x}/{y}.png';
+        var map = this.map = L.map('map').setView([-5.3828, -214.5597], 18);
         var basemap = this.basemap = L.tileLayer(baseurl, {
             attribution: 'data OSM - map CartoDB'
         }).addTo(map);
@@ -174,7 +174,7 @@ O.Template({
         this.story.clear();
 
         if (this.baseurl && (this.baseurl !== actions.global.baseurl)) {
-            this.baseurl = actions.global.baseurl || 'http://0.api.cartocdn.com/base-light/{z}/{x}/{y}.png';
+            this.baseurl = actions.global.baseurl || 'http://a.tiles.mapbox.com/v3/jamiejcross.mi0i2gik/{z}/{x}/{y}.png';
 
             this.basemap.setUrl(this.baseurl);
         }

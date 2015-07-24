@@ -1,0 +1,411 @@
+/* line 17, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../usr/local/share/gems/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/Lato-Regular.eot");
+  src: url("../fonts/Lato-Regular.eot?iefix") format("eot"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato-Regular.svg#webfont") format("svg");
+}
+
+@font-face {
+  font-family: 'lato-bold';
+  src: url("../fonts/Lato-Bold.eot");
+  src: url("../fonts/Lato-Bold.eot?iefix") format("eot"), url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.ttf") format("truetype"), url("../fonts/Lato-Bold.svg#webfont") format("svg");
+}
+
+/* line 9, ../sass/scroll.scss */
+body {
+  font-family: 'lato', Arial, sans-serif;
+  /*overflow: hidden;*/
+  text-align: center;
+  min-height: 100%;
+  background: #fff;
+}
+
+/* line 14, ../sass/scroll.scss */
+html {
+  min-height: 100%;
+}
+
+/* line 17, ../sass/scroll.scss */
+.progress-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 3px;
+  display: inline-block;
+  background: #ff7373;
+  width: 20%;
+  z-index: 2;
+}
+
+/* line 28, ../sass/scroll.scss */
+.inner-header {
+  display: none;
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+/* line 35, ../sass/scroll.scss */
+#layout {
+  width: 100%;
+  margin: 0px auto;
+  background: #f5f5f5;
+}
+
+/* line 42, ../sass/scroll.scss */
+#header {
+  padding: 20px 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* line 47, ../sass/scroll.scss */
+#header h1 {
+  font: 40px 'AleoBold';
+  color: #fff;
+}
+/* line 52, ../sass/scroll.scss */
+#header h2 {
+  font: 28px/32px 'AleoRegular';
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 12px;
+}
+/* line 58, ../sass/scroll.scss */
+#header h3 {
+  font: 24px 'AleoRegular';
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 12px;
+}
+/* line 64, ../sass/scroll.scss */
+#header h4 {
+  font: 22px 'AleoRegular';
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 12px;
+}
+/* line 69, ../sass/scroll.scss */
+#header h5 {
+  font: 20px 'AleoRegular';
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 12px;
+}
+/* line 74, ../sass/scroll.scss */
+#header h6 {
+  font: 18px 'AleoRegular';
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 12px;
+}
+/* line 79, ../sass/scroll.scss */
+#header p {
+  font: 16px/26px 'AleoRegular';
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 12px;
+}
+/* line 84, ../sass/scroll.scss */
+#header a {
+  text-decoration: none;
+  color: #666;
+}
+/* line 85, ../sass/scroll.scss */
+#header ul, #header ol {
+  font: 16px/26px 'AleoRegular';
+  color: #666;
+  margin-top: 12px;
+}
+/* line 90, ../sass/scroll.scss */
+#header ul {
+  list-style-type: disc;
+}
+/* line 91, ../sass/scroll.scss */
+#header ol {
+  list-style-type: lower-hexadecimal;
+}
+/* line 93, ../sass/scroll.scss */
+#header blockquote {
+  background: #f5f5f5;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+/* line 98, ../sass/scroll.scss */
+#header blockquote ul, #header blockquote ol {
+  margin-left: 17px;
+}
+/* line 101, ../sass/scroll.scss */
+#header blockquote *:first-child {
+  margin-top: 0;
+}
+
+/* line 107, ../sass/scroll.scss */
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 109, ../sass/scroll.scss */
+#map_container {
+  height: 100%;
+}
+/* line 112, ../sass/scroll.scss */
+#map_container.attachTop {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* line 120, ../sass/scroll.scss */
+#content {
+  position: absolute;
+  left: 100px;
+  top: 0px;
+  z-index: 999;
+  padding: 0px 0px 80px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  /*min-height: 1800px;*/
+}
+/* line 130, ../sass/scroll.scss */
+#content img {
+  max-width: 100%;
+  margin: 20px 0 0 0;
+}
+/* line 131, ../sass/scroll.scss */
+#content.attachMap {
+  /*margin-top: 250px;*/
+}
+/* line 134, ../sass/scroll.scss */
+#content > div {
+  margin-top: 0px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 2px;
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1);
+}
+/* line 141, ../sass/scroll.scss */
+#content > div:first-child {
+  margin: 0;
+}
+/* line 143, ../sass/scroll.scss */
+#content h1 {
+  font: 26px 'AleoBold';
+  color: #333;
+}
+/* line 146, ../sass/scroll.scss */
+#content h1:before {
+  content: "";
+  height: 3px;
+  display: block;
+  width: 70px;
+  background: #333;
+  margin-bottom: 15px;
+}
+/* line 155, ../sass/scroll.scss */
+#content h2, #content h3, #content h4, #content h5, #content h6 {
+  font: 18px 'AleoBold';
+  color: #333;
+  margin-top: 20px;
+}
+/* line 160, ../sass/scroll.scss */
+#content p {
+  font: 16px/26px 'AleoRegular';
+  color: #666;
+  margin-top: 20px;
+}
+/* line 165, ../sass/scroll.scss */
+#content a {
+  text-decoration: none;
+  color: #666;
+}
+/* line 166, ../sass/scroll.scss */
+#content ul, #content ol {
+  font: 16px/26px 'AleoRegular';
+  color: #666;
+  margin-top: 20px;
+}
+/* line 171, ../sass/scroll.scss */
+#content ul {
+  list-style-type: disc;
+}
+/* line 172, ../sass/scroll.scss */
+#content ol {
+  list-style-type: lower-hexadecimal;
+}
+/* line 174, ../sass/scroll.scss */
+#content blockquote {
+  background: #f5f5f5;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+/* line 179, ../sass/scroll.scss */
+#content blockquote ul, #content blockquote ol {
+  margin-left: 17px;
+}
+/* line 182, ../sass/scroll.scss */
+#content blockquote *:first-child {
+  margin-top: 0;
+}
+/* line 187, ../sass/scroll.scss */
+#content strong {
+  font-family: "AleoBold";
+}
+/* line 191, ../sass/scroll.scss */
+#content em {
+  font-style: italic;
+}
+
+/* line 196, ../sass/scroll.scss */
+div#credits {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  background-color: #FFF;
+  border-top: 1px solid #e5e5e5;
+  z-index: 1000001;
+}
+/* line 207, ../sass/scroll.scss */
+div#credits a {
+  color: #ff7373;
+}
+/* line 208, ../sass/scroll.scss */
+div#credits span {
+  padding: 18px 0 0 0;
+  position: absolute;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+/* line 214, ../sass/scroll.scss */
+div#credits span.title {
+  left: 40px;
+  font-family: 'Proxima N W01 Bold', Sans-serif;
+  color: #333;
+}
+/* line 220, ../sass/scroll.scss */
+div#credits span.author {
+  right: 40px;
+  font-family: AleoRegular, Serif;
+  color: #999;
+  letter-spacing: 2px;
+  font-size: 10px;
+  text-align: right;
+}
+
+/* line 232, ../sass/scroll.scss */
+#days {
+  width: 100px;
+  position: fixed;
+  font-size: 14px;
+  font-family: 'lato', Arial, sans-serif;
+  left: 0px;
+  top: 0px;
+  z-index: 110;
+  text-align: left;
+  /*background-color: #3C3C3B;*/
+  background-color: #B9CDB4;
+  height: 100%;
+  padding-left: 10px;
+}
+
+/* line 247, ../sass/scroll.scss */
+.rot90 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+}
+
+/* line 253, ../sass/scroll.scss */
+#days ul {
+  text-align: left;
+}
+
+/* line 256, ../sass/scroll.scss */
+#days ul li.selected {
+  color: #F97821;
+}
+
+/* line 261, ../sass/scroll.scss */
+#days ul li.selected * {
+  color: #F97821;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* line 268, ../sass/scroll.scss */
+#days ul li {
+  color: red;
+  margin-top: 50px;
+}
+
+/* line 273, ../sass/scroll.scss */
+#days ul li a {
+  color: white;
+  text-decoration: none;
+}
