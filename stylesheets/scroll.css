@@ -91,14 +91,14 @@ html {
 
 /* line 17, ../sass/scroll.scss */
 .progress-bar {
-  position: fixed;
+  display: none;
+  position: absolute;
   left: 0;
   top: 0;
-  height: 3px;
-  display: inline-block;
+  height: 1px;
   background: #ff7373;
-  width: 20%;
-  z-index: 2;
+  width: 0%;
+  z-index: 0;
 }
 
 /* line 28, ../sass/scroll.scss */
@@ -124,91 +124,99 @@ html {
 }
 /* line 47, ../sass/scroll.scss */
 #header h1 {
-  font: 40px 'AleoBold';
+  font-family: 'lato', Arial, sans-serif;
+  font-size: 40px;
   color: #fff;
 }
-/* line 52, ../sass/scroll.scss */
+/* line 53, ../sass/scroll.scss */
 #header h2 {
-  font: 28px/32px 'AleoRegular';
+  font-family: 'lato', Arial, sans-serif;
+  font-size: 28px/32px;
   color: rgba(255, 255, 255, 0.6);
   margin-top: 12px;
 }
-/* line 58, ../sass/scroll.scss */
+/* line 60, ../sass/scroll.scss */
 #header h3 {
-  font: 24px 'AleoRegular';
+  font-family: 'lato', Arial, sans-serif;
+  font-size: 24px;
   color: rgba(255, 255, 255, 0.6);
   margin-top: 12px;
 }
-/* line 64, ../sass/scroll.scss */
+/* line 67, ../sass/scroll.scss */
 #header h4 {
-  font: 22px 'AleoRegular';
+  font-family: 'lato', Arial, sans-serif;
+  font-size: 22px;
   color: rgba(255, 255, 255, 0.6);
   margin-top: 12px;
 }
-/* line 69, ../sass/scroll.scss */
+/* line 73, ../sass/scroll.scss */
 #header h5 {
-  font: 20px 'AleoRegular';
-  color: rgba(255, 255, 255, 0.6);
-  margin-top: 12px;
-}
-/* line 74, ../sass/scroll.scss */
-#header h6 {
-  font: 18px 'AleoRegular';
+  font-family: 'lato', Arial, sans-serif;
+  font-size: 20px;
   color: rgba(255, 255, 255, 0.6);
   margin-top: 12px;
 }
 /* line 79, ../sass/scroll.scss */
-#header p {
-  font: 16px/26px 'AleoRegular';
+#header h6 {
+  font-family: 'lato', Arial, sans-serif;
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.6);
   margin-top: 12px;
 }
-/* line 84, ../sass/scroll.scss */
+/* line 85, ../sass/scroll.scss */
+#header p {
+  font-family: 'lato', Arial, sans-serif;
+  font-size: 16px/26px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 12px;
+}
+/* line 91, ../sass/scroll.scss */
 #header a {
   text-decoration: none;
   color: #666;
 }
-/* line 85, ../sass/scroll.scss */
+/* line 92, ../sass/scroll.scss */
 #header ul, #header ol {
-  font: 16px/26px 'AleoRegular';
+  font-family: 'lato', Arial, sans-serif;
+  font-size: 16px/26px;
   color: #666;
   margin-top: 12px;
 }
-/* line 90, ../sass/scroll.scss */
+/* line 98, ../sass/scroll.scss */
 #header ul {
   list-style-type: disc;
 }
-/* line 91, ../sass/scroll.scss */
+/* line 99, ../sass/scroll.scss */
 #header ol {
   list-style-type: lower-hexadecimal;
 }
-/* line 93, ../sass/scroll.scss */
+/* line 101, ../sass/scroll.scss */
 #header blockquote {
   background: #f5f5f5;
   padding: 20px;
   margin-top: 20px;
   border-radius: 4px;
 }
-/* line 98, ../sass/scroll.scss */
+/* line 106, ../sass/scroll.scss */
 #header blockquote ul, #header blockquote ol {
   margin-left: 17px;
 }
-/* line 101, ../sass/scroll.scss */
+/* line 109, ../sass/scroll.scss */
 #header blockquote *:first-child {
   margin-top: 0;
 }
 
-/* line 107, ../sass/scroll.scss */
+/* line 115, ../sass/scroll.scss */
 #map {
   width: 100%;
   height: 100%;
 }
 
-/* line 109, ../sass/scroll.scss */
+/* line 117, ../sass/scroll.scss */
 #map_container {
   height: 100%;
 }
-/* line 112, ../sass/scroll.scss */
+/* line 120, ../sass/scroll.scss */
 #map_container.attachTop {
   position: fixed;
   width: 100%;
@@ -216,110 +224,114 @@ html {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* line 120, ../sass/scroll.scss */
+/* line 128, ../sass/scroll.scss */
 #content {
   position: absolute;
   left: 110px;
-  top: 3px;
+  top: 0px;
   z-index: 999;
   padding: 0px 0px 80px;
-  max-width: 800px;
+  max-width: 30em;
   margin: 0 auto;
   background-color: rgba(196, 195, 184, 0.9);
   text-align: left;
   /*min-height: 1800px;*/
 }
-/* line 132, ../sass/scroll.scss */
+/* line 140, ../sass/scroll.scss */
 #content img {
   max-width: 100%;
   margin: 20px 0 0 0;
 }
-/* line 133, ../sass/scroll.scss */
+/* line 141, ../sass/scroll.scss */
 #content.attachMap {
   /*margin-top: 250px;*/
 }
-/* line 136, ../sass/scroll.scss */
+/* line 144, ../sass/scroll.scss */
 #content > div {
   margin-top: 0px;
-  background-color: rgba(196, 195, 184, 0.7);
-  padding: 40px;
+  background-color: rgba(196, 195, 184, 0.9);
+  padding: 40 40 0 40px;
   border-radius: 2px;
-  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1);
+  /*box-shadow: 0 2px 0px rgba(0,0,0, 0.2);*/
 }
-/* line 144, ../sass/scroll.scss */
+/* line 150, ../sass/scroll.scss */
 #content > div:first-child {
   margin: 0;
 }
-/* line 146, ../sass/scroll.scss */
+/* line 152, ../sass/scroll.scss */
 #content h1 {
-  font: 26px 'AleoBold';
-  color: #333;
+  font-family: 'lato', Arial, sans-serif;
+  font-size: 26px;
+  color: #3C3C3B;
 }
-/* line 149, ../sass/scroll.scss */
-#content h1:before {
+/* line 156, ../sass/scroll.scss */
+#content h1:after {
   content: "";
-  height: 3px;
+  height: 2px;
   display: block;
-  width: 70px;
+  width: 100px;
   background: #333;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
-/* line 158, ../sass/scroll.scss */
+/* line 165, ../sass/scroll.scss */
 #content h2, #content h3, #content h4, #content h5, #content h6 {
-  font: 18px 'AleoBold';
-  color: #333;
+  font-family: 'lato', Arial, sans-serif;
+  font-size: 18px;
+  color: #3C3C3B;
   margin-top: 20px;
 }
-/* line 163, ../sass/scroll.scss */
+/* line 171, ../sass/scroll.scss */
 #content p {
-  font: 16px/26px 'AleoRegular';
-  color: #666;
+  font-family: 'lato', Arial, sans-serif;
+  font-size: 16px/26px;
+  color: #3C3C3B;
   margin-top: 20px;
 }
-/* line 168, ../sass/scroll.scss */
+/* line 177, ../sass/scroll.scss */
 #content a {
   text-decoration: none;
   color: #666;
 }
-/* line 169, ../sass/scroll.scss */
+/* line 178, ../sass/scroll.scss */
 #content ul, #content ol {
-  font: 16px/26px 'AleoRegular';
-  color: #666;
+  font-family: 'lato', Arial, sans-serif;
+  font-size: 16px/26px;
+  color: #3C3C3B;
   margin-top: 20px;
 }
-/* line 174, ../sass/scroll.scss */
+/* line 184, ../sass/scroll.scss */
 #content ul {
   list-style-type: disc;
 }
-/* line 175, ../sass/scroll.scss */
+/* line 185, ../sass/scroll.scss */
 #content ol {
   list-style-type: lower-hexadecimal;
 }
-/* line 177, ../sass/scroll.scss */
+/* line 187, ../sass/scroll.scss */
 #content blockquote {
   background: #f5f5f5;
   padding: 20px;
   margin-top: 20px;
   border-radius: 4px;
 }
-/* line 182, ../sass/scroll.scss */
+/* line 192, ../sass/scroll.scss */
 #content blockquote ul, #content blockquote ol {
   margin-left: 17px;
 }
-/* line 185, ../sass/scroll.scss */
+/* line 195, ../sass/scroll.scss */
 #content blockquote *:first-child {
   margin-top: 0;
 }
-/* line 190, ../sass/scroll.scss */
+/* line 200, ../sass/scroll.scss */
 #content strong {
-  font-family: "AleoBold";
+  font-family: 'lato-bold', Arial, sans-serif;
 }
-/* line 194, ../sass/scroll.scss */
+/* line 204, ../sass/scroll.scss */
 #content em {
   font-style: italic;
 }
 
-/* line 199, ../sass/scroll.scss */
+/* line 209, ../sass/scroll.scss */
 div#credits {
   display: none;
   position: fixed;
@@ -331,40 +343,39 @@ div#credits {
   border-top: 1px solid #e5e5e5;
   z-index: 1000001;
 }
-/* line 210, ../sass/scroll.scss */
+/* line 220, ../sass/scroll.scss */
 div#credits a {
   color: #ff7373;
 }
-/* line 211, ../sass/scroll.scss */
+/* line 221, ../sass/scroll.scss */
 div#credits span {
   padding: 18px 0 0 0;
   position: absolute;
   font-size: 12px;
   text-transform: uppercase;
 }
-/* line 217, ../sass/scroll.scss */
+/* line 227, ../sass/scroll.scss */
 div#credits span.title {
   left: 40px;
-  font-family: 'Proxima N W01 Bold', Sans-serif;
+  font-family: 'lato-bold', Arial, sans-serif;
   color: #333;
 }
-/* line 223, ../sass/scroll.scss */
+/* line 233, ../sass/scroll.scss */
 div#credits span.author {
   right: 40px;
-  font-family: AleoRegular, Serif;
+  font-family: 'lato', Arial, sans-serif;
   color: #999;
   letter-spacing: 2px;
   font-size: 10px;
   text-align: right;
 }
 
-/* line 235, ../sass/scroll.scss */
+/* line 245, ../sass/scroll.scss */
 #days {
   width: 100px;
   position: fixed;
   font-size: 14px;
   font-family: 'lato', Arial, sans-serif;
-  left: 0px;
   top: 0px;
   z-index: 110;
   text-align: left;
@@ -374,7 +385,7 @@ div#credits span.author {
   padding-left: 10px;
 }
 
-/* line 250, ../sass/scroll.scss */
+/* line 259, ../sass/scroll.scss */
 .rot90 {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -382,30 +393,30 @@ div#credits span.author {
   -ms-transform: rotate(90deg);
 }
 
-/* line 256, ../sass/scroll.scss */
+/* line 265, ../sass/scroll.scss */
 #days ul {
   text-align: left;
 }
 
-/* line 259, ../sass/scroll.scss */
+/* line 268, ../sass/scroll.scss */
 #days ul li.selected {
   color: #F97821;
 }
 
-/* line 264, ../sass/scroll.scss */
+/* line 273, ../sass/scroll.scss */
 #days ul li.selected * {
   color: #F97821;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-/* line 271, ../sass/scroll.scss */
+/* line 280, ../sass/scroll.scss */
 #days ul li {
   color: red;
   margin-top: 50px;
 }
 
-/* line 276, ../sass/scroll.scss */
+/* line 285, ../sass/scroll.scss */
 #days ul li a {
   color: white;
   text-decoration: none;

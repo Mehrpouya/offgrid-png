@@ -53,7 +53,8 @@
         var baseurl = this.baseurl = 'http://a.tiles.mapbox.com/v3/jamiejcross.mi7nj31l/{z}/{x}/{y}.png';
         var map = this.map = L.map('map',{
           center: [0, 0],
-          zoom: 4
+          zoom: 4,
+          zoomControl:false
         });
 
         this.map.scrollWheelZoom.disable();
@@ -62,16 +63,16 @@
           attribution: 'data OSM - map CartoDB'
         }).addTo(map);
 
-        var story = O.Story()
+        var story = O.Story();
 
         this.story = story;
-        this.miniprogressbar = O.MiniProgressBar();
+//        this.miniprogressbar = O.MiniProgressBar();
 
         // trigger when  map_pos go out of the screen
         this.edge = O.Edge(
           O.Triggers.Scroll().less('map_pos').offset(0),
           O.Triggers.Scroll().greater('map_pos').offset(0)
-        )
+        );
       },
 
       update: function(actions) {
@@ -168,8 +169,8 @@
           this.story.addState(
             O.Triggers.Scroll().within('s_' + i).offset(TRIGGER_LINE),
             O.Parallel(
-              slide(this),
-              this.miniprogressbar.percent(100*i/(actions.length - 1))
+              slide(this)
+//      ,       this.miniprogressbar.percent(100*i/(actions.length - 1))
             )
           )
         }
