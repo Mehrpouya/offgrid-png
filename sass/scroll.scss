@@ -153,6 +153,7 @@ html { min-height: 100%; }
         font-family: 'lato', Arial, sans-serif;
         font-size: 26px;
         color: #3C3C3B;
+        letterspacing: 1px;
         &:after {
             content:"";
             height: 2px;
@@ -164,6 +165,7 @@ html { min-height: 100%; }
     }
     h2, h3, h4, h5, h6 {
         font-family: 'lato', Arial, sans-serif;
+        letterspacing: 1px;
         font-size: 18px;
         color: #3C3C3B;
         margin-top: 20px;
@@ -171,8 +173,10 @@ html { min-height: 100%; }
     p {
         font-family: 'lato', Arial, sans-serif;
         font-size: 16px/26px;
+        letterspacing: 0px;
         color: #3C3C3B;
         margin-top: 20px;
+        line-height: 35px;
     }
     a { text-decoration: none; color: #666;}
     ul, ol {

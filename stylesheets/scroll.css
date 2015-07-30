@@ -263,8 +263,9 @@ html {
   font-family: 'lato', Arial, sans-serif;
   font-size: 26px;
   color: #3C3C3B;
+  letterspacing: 1px;
 }
-/* line 156, ../sass/scroll.scss */
+/* line 157, ../sass/scroll.scss */
 #content h1:after {
   content: "";
   height: 2px;
@@ -273,65 +274,68 @@ html {
   background: #333;
   margin-top: 15px;
 }
-/* line 165, ../sass/scroll.scss */
+/* line 166, ../sass/scroll.scss */
 #content h2, #content h3, #content h4, #content h5, #content h6 {
   font-family: 'lato', Arial, sans-serif;
+  letterspacing: 1px;
   font-size: 18px;
   color: #3C3C3B;
   margin-top: 20px;
 }
-/* line 171, ../sass/scroll.scss */
+/* line 173, ../sass/scroll.scss */
 #content p {
   font-family: 'lato', Arial, sans-serif;
   font-size: 16px/26px;
+  letterspacing: 0px;
   color: #3C3C3B;
   margin-top: 20px;
+  line-height: 35px;
 }
-/* line 177, ../sass/scroll.scss */
+/* line 181, ../sass/scroll.scss */
 #content a {
   text-decoration: none;
   color: #666;
 }
-/* line 178, ../sass/scroll.scss */
+/* line 182, ../sass/scroll.scss */
 #content ul, #content ol {
   font-family: 'lato', Arial, sans-serif;
   font-size: 16px/26px;
   color: #3C3C3B;
   margin-top: 20px;
 }
-/* line 184, ../sass/scroll.scss */
+/* line 188, ../sass/scroll.scss */
 #content ul {
   list-style-type: disc;
 }
-/* line 185, ../sass/scroll.scss */
+/* line 189, ../sass/scroll.scss */
 #content ol {
   list-style-type: lower-hexadecimal;
 }
-/* line 187, ../sass/scroll.scss */
+/* line 191, ../sass/scroll.scss */
 #content blockquote {
   background: #f5f5f5;
   padding: 20px;
   margin-top: 20px;
   border-radius: 4px;
 }
-/* line 192, ../sass/scroll.scss */
+/* line 196, ../sass/scroll.scss */
 #content blockquote ul, #content blockquote ol {
   margin-left: 17px;
 }
-/* line 195, ../sass/scroll.scss */
+/* line 199, ../sass/scroll.scss */
 #content blockquote *:first-child {
   margin-top: 0;
 }
-/* line 200, ../sass/scroll.scss */
+/* line 204, ../sass/scroll.scss */
 #content strong {
   font-family: 'lato-bold', Arial, sans-serif;
 }
-/* line 204, ../sass/scroll.scss */
+/* line 208, ../sass/scroll.scss */
 #content em {
   font-style: italic;
 }
 
-/* line 209, ../sass/scroll.scss */
+/* line 213, ../sass/scroll.scss */
 div#credits {
   display: none;
   position: fixed;
@@ -343,24 +347,24 @@ div#credits {
   border-top: 1px solid #e5e5e5;
   z-index: 1000001;
 }
-/* line 220, ../sass/scroll.scss */
+/* line 224, ../sass/scroll.scss */
 div#credits a {
   color: #ff7373;
 }
-/* line 221, ../sass/scroll.scss */
+/* line 225, ../sass/scroll.scss */
 div#credits span {
   padding: 18px 0 0 0;
   position: absolute;
   font-size: 12px;
   text-transform: uppercase;
 }
-/* line 227, ../sass/scroll.scss */
+/* line 231, ../sass/scroll.scss */
 div#credits span.title {
   left: 40px;
   font-family: 'lato-bold', Arial, sans-serif;
   color: #333;
 }
-/* line 233, ../sass/scroll.scss */
+/* line 237, ../sass/scroll.scss */
 div#credits span.author {
   right: 40px;
   font-family: 'lato', Arial, sans-serif;
@@ -370,7 +374,7 @@ div#credits span.author {
   text-align: right;
 }
 
-/* line 245, ../sass/scroll.scss */
+/* line 249, ../sass/scroll.scss */
 #days {
   width: 100px;
   position: fixed;
@@ -385,7 +389,7 @@ div#credits span.author {
   padding-left: 10px;
 }
 
-/* line 259, ../sass/scroll.scss */
+/* line 263, ../sass/scroll.scss */
 .rot90 {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -393,30 +397,30 @@ div#credits span.author {
   -ms-transform: rotate(90deg);
 }
 
-/* line 265, ../sass/scroll.scss */
+/* line 269, ../sass/scroll.scss */
 #days ul {
   text-align: left;
 }
 
-/* line 268, ../sass/scroll.scss */
+/* line 272, ../sass/scroll.scss */
 #days ul li.selected {
   color: #F97821;
 }
 
-/* line 273, ../sass/scroll.scss */
+/* line 277, ../sass/scroll.scss */
 #days ul li.selected * {
   color: #F97821;
   font-weight: bold;
   text-decoration: none;
 }
 
-/* line 280, ../sass/scroll.scss */
+/* line 284, ../sass/scroll.scss */
 #days ul li {
   color: red;
   margin-top: 50px;
 }
 
-/* line 285, ../sass/scroll.scss */
+/* line 289, ../sass/scroll.scss */
 #days ul li a {
   color: white;
   text-decoration: none;
