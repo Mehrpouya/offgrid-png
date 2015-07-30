@@ -227,7 +227,7 @@ html {
 /* line 128, ../sass/scroll.scss */
 #content {
   position: absolute;
-  left: 110px;
+  left: 130px;
   top: 0px;
   z-index: 999;
   padding: 0px 0px 80px;
@@ -376,7 +376,7 @@ div#credits span.author {
 
 /* line 249, ../sass/scroll.scss */
 #days {
-  width: 100px;
+  width: 110px;
   position: fixed;
   font-size: 14px;
   font-family: 'lato', Arial, sans-serif;
@@ -386,10 +386,10 @@ div#credits span.author {
   background-color: #3C3C3B;
   /*    background-color: rgba(196,195,184,1);*/
   height: 100%;
-  padding-left: 10px;
+  padding: 0 10 0 10px;
 }
 
-/* line 263, ../sass/scroll.scss */
+/* line 265, ../sass/scroll.scss */
 .rot90 {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -397,31 +397,32 @@ div#credits span.author {
   -ms-transform: rotate(90deg);
 }
 
-/* line 269, ../sass/scroll.scss */
+/* line 271, ../sass/scroll.scss */
 #days ul {
   text-align: left;
+  position: relative;
 }
 
-/* line 272, ../sass/scroll.scss */
+/* line 275, ../sass/scroll.scss */
 #days ul li.selected {
   color: #F97821;
 }
 
-/* line 277, ../sass/scroll.scss */
+/* line 280, ../sass/scroll.scss */
 #days ul li.selected * {
   color: #F97821;
   font-weight: bold;
   text-decoration: none;
 }
 
-/* line 284, ../sass/scroll.scss */
+/* line 287, ../sass/scroll.scss */
 #days ul li {
   color: red;
   margin-top: 50px;
 }
 
-/* line 289, ../sass/scroll.scss */
+/* line 292, ../sass/scroll.scss */
 #days ul li a {
-  color: white;
+  color: #ECECEC;
   text-decoration: none;
 }

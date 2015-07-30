@@ -127,7 +127,7 @@ html { min-height: 100%; }
 
 #content {
     position: absolute;
-    left: 110px;
+    left: 130px;
     top: 0px;
     z-index: 999;
     padding: 0px 0px 80px;
@@ -247,7 +247,7 @@ div#credits {
 }
 
 #days{
-    width: 100px;
+    width: 110px;
     position: fixed;
     font-size: 14px;
     font-family: 'lato', Arial, sans-serif;
@@ -257,7 +257,9 @@ div#credits {
     background-color: #3C3C3B;
     /*    background-color: rgba(196,195,184,1);*/
     height: 100%;
-    padding-left: 10px;
+    padding: 0 10 0 10px;
+
+    
 }
 
 .rot90{
@@ -268,6 +270,7 @@ div#credits {
 }
 #days ul{
     text-align: left;
+    position:relative;
 }
 #days ul li.selected{
     color: #F97821;
@@ -287,7 +290,7 @@ div#credits {
 }
 
 #days ul li a{
-    color: white;
+    color: #ECECEC;
     text-decoration:none;
 }
 
