@@ -1,19 +1,23 @@
 var g_isPlaying = false;
-function OnScrollDiv(div) {
-    console.log("Horizontal: " + div.scrollLeft
-            + "px<br/>Vertical: " + div.scrollTop + "px");
-}
+//function OnScrollDiv(div) {
+//    console.log("Horizontal: " + div.scrollLeft
+//            + "px<br/>Vertical: " + div.scrollTop + "px");
+//}
 var resizePID;
 
-
 $(document).ready(function() {
-    api.player.postMessage(
-            '{ "method": "setVolume", "value": "0" }',
-            'http://player.vimeo.com'
-            );
-
+//    api.player.postMessage(
+//            '{ "method": "setVolume", "value": "0" }',
+//            'http://player.vimeo.com'
+//            );
+//   $("#downArrowImg").on("click",function(){
+//       $('#slides').animate({
+//            scrollTop: $( $.attr(this, 'href') ).offset().top
+//        }, 200);
+//   }) ;
+   
+    
 });
-
 var resizePID;
 
 function clearResize() {
@@ -88,12 +92,19 @@ var embedVideo = O.Action(function() {
         });
     }
     $(".slide.selected ").scroll(function() {
+            if ($(this).scrollTop() + $(this).innerHeight() >= this.scrollHeight) {
+               $("#scrollSign").hide();
+               $("#navButtons").show();
+            }
+            else{
+                $("#scrollSign").has().show();
+            }
         if (isScrolledIntoView(".slide.selected iframe")) {
             var iframe = $('.slide.selected iframe')[0];
             var player = $f(iframe);
             if (!window.g_isPlaying) {
                 window.g_isPlaying = true;
-                
+
                 player.api('play');
                 player.api('setVolume', 0);
                 window.g_currentVideo = player;
@@ -164,6 +175,7 @@ O.Template({
         this.seq = seq;
         this.slides = slides;
         this.progress = O.UI.DotProgress('dots').count(0);
+        
     },
     update: function(actions) {
         var self = this;
@@ -211,11 +223,13 @@ O.Template({
 
                 this.created = true;
             }
+            
 
             return;
         }
 
         this._resetActions(actions);
+        
     },
     _resetActions: function(actions) {
         // update footer title and author
@@ -252,6 +266,7 @@ O.Template({
 
             actions.on("finish.app", function() {
                 adjustSlides();
+                
             });
 
             this.story.addState(
@@ -259,7 +274,7 @@ O.Template({
                     actions
                     )
         }
-
+        
         this.story.go(this.seq.current());
     },
     changeSlide: function(n) {
