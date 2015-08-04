@@ -15,8 +15,8 @@ $(document).ready(function() {
 //            scrollTop: $( $.attr(this, 'href') ).offset().top
 //        }, 200);
 //   }) ;
-   
-    
+
+
 });
 var resizePID;
 
@@ -38,6 +38,7 @@ if (!window.addEventListener) {
 }
 
 function adjustSlides() {
+    console.log("adjustSlides();");
     var container = document.getElementById("slides_container"),
             slide = document.querySelectorAll('.selected_slide')[0];
 
@@ -56,6 +57,14 @@ function adjustSlides() {
             slide.style.height = "auto";
             slide.classList.remove("scrolled");
         }
+    }
+    var c_slide = $(".slide.selected ");
+    if (c_slide.scrollTop() + c_slide.innerHeight() >= c_slide.scrollHeight) {
+        $("#scrollSign").hide();
+        $("#navButtons").show();
+    }
+    else {
+        $("#scrollSign").has().show();
     }
 }
 
@@ -92,13 +101,13 @@ var embedVideo = O.Action(function() {
         });
     }
     $(".slide.selected ").scroll(function() {
-            if ($(this).scrollTop() + $(this).innerHeight() >= this.scrollHeight) {
-               $("#scrollSign").hide();
-               $("#navButtons").show();
-            }
-            else{
-                $("#scrollSign").has().show();
-            }
+        if ($(this).scrollTop() + $(this).innerHeight() >= this.scrollHeight) {
+            $("#scrollSign").hide();
+            $("#navButtons").show();
+        }
+        else {
+            $("#scrollSign").has().show();
+        }
         if (isScrolledIntoView(".slide.selected iframe")) {
             var iframe = $('.slide.selected iframe')[0];
             var player = $f(iframe);
@@ -123,6 +132,17 @@ var embedVideo = O.Action(function() {
 });
 var hideLoadingAnimation = O.Action(function() {
     $('#dvLoading').fadeOut(2000);
+});
+
+var prepareScrollArrow = O.Action(function() {
+    var c_slide = $(".slide.selected ");
+    if (c_slide.scrollTop() + c_slide.innerHeight() >= c_slide.scrollHeight) {
+        $("#scrollSign").hide();
+        $("#navButtons").show();
+    }
+    else {
+        $("#scrollSign").has().show();
+    }
 });
 //
 function isScrolledIntoView(elem)
@@ -169,13 +189,21 @@ O.Template({
         click(document.querySelectorAll('.prev')).then(seq.prev, seq)
 
         var slides = O.Actions.Slides('slides');
-        var story = O.Story()
+        var story = O.Story();
 
         this.story = story;
         this.seq = seq;
         this.slides = slides;
         this.progress = O.UI.DotProgress('dots').count(0);
-        
+        var c_slide = $(".slide.selected ");
+        if (c_slide.scrollTop() + c_slide.innerHeight() >= c_slide.scrollHeight) {
+            $("#scrollSign").hide();
+            $("#navButtons").show();
+        }
+        else {
+            $("#scrollSign").has().show();
+        }
+
     },
     update: function(actions) {
         var self = this;
@@ -223,13 +251,13 @@ O.Template({
 
                 this.created = true;
             }
-            
+
 
             return;
         }
 
         this._resetActions(actions);
-        
+
     },
     _resetActions: function(actions) {
         // update footer title and author
@@ -260,21 +288,23 @@ O.Template({
                     this.slides.activate(i),
                     slide(this),
                     this.progress.activate(i),
+                    prepareScrollArrow,
+//                    adjustSlides,
                     embedVideo,
                     hideLoadingAnimation
                     );
 
             actions.on("finish.app", function() {
                 adjustSlides();
-                
+
             });
 
             this.story.addState(
                     this.seq.step(i),
                     actions
-                    )
+                    );
         }
-        
+
         this.story.go(this.seq.current());
     },
     changeSlide: function(n) {
