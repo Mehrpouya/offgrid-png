@@ -111,7 +111,7 @@ body {
 }
 /* line 33, ../sass/offgrid.scss */
 #slides_container .slide {
-  width: 595px;
+  width: 600px;
   display: none;
   overflow-y: scroll;
   /*line-height: 1.5;*/
@@ -266,7 +266,7 @@ body {
   position: static;
   bottom: -40;
   text-align: center;
-  max-height: 40px;
+  height: 40px;
   z-index: 999;
 }
 /* line 186, ../sass/offgrid.scss */

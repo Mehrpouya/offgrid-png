@@ -173,6 +173,7 @@ function click(el) {
 
 O.Template({
     init: function() {
+        console.log("init()");
         var seq = O.Triggers.Sequential();
 
         var baseurl = this.baseurl = 'http://a.tiles.mapbox.com/v3/jamiejcross.mi0i2gik/{z}/{x}/{y}.png';
